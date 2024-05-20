@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="margin-left: 360px;" bgcolor="black">
+    <div class="card" style="height: 400px; width:280px;margin-left: 10px; border:1px solid rgb(33, 13, 55);border-radius: 10px;background: linear-gradient(to bottom, #3710c5, #31247e);;">
+        <div class="header" >
+            <input type="text" placeholder="Enter the city" spellcheck="false" class="citytext" style=" width: 70%;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            margin-top:40px;
+            margin-left: 20px ;"/>
+            <button type="button" style="padding: 0;"><img src="https://cdn.icon-icons.com/icons2/3392/PNG/512/small_search_icon_213735.png" style="width: 24px; height: 19px; " /></button>
+        </div>
+        <div class="invaliddata" style="display: none; text-align: center; padding: 10px; background-color: #412fc3; border-radius: 5px; margin-top: 10px; color: #3915d8;">
+            <p>Invalid Data</p>
+        </div>
+        <div class="weather" style="padding: 20px; text-align: center;">
+            <img src="https://cdn1.iconfinder.com/data/icons/weather-189/64/weather-icons-rainy-512.png" class="weather-icon" style="width: 80px; height: auto;" />
+            <h1 class="temp" style="margin-top: 0; font-size: 28px; font-weight: bold; color: #333;"></h1>
+            <h2 class="city" style="margin: 5px 0; font-size: 22px; color: #555;"></h2>
+            <div class="details" style="display: flex; justify-content: space-between; margin-top: 20px;">
+                <div class="col" style="flex: 1; display: flex; align-items: center;">
+                    <img src="https://static-00.iconduck.com/assets.00/humidity-icon-2048x1675-xxsge5os.png" style="width: 30px; height: auto; margin-right: 10px;" />
+                    <div>
+                        <p class="humidity" style="margin: 0; font-size: 16px; color: #666;"></p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col" style="flex: 1; display: flex; align-items: center;">
+                    <img src="image.png" style="width: 30px; height: auto; margin-right: 10px;" />
+                    <div>
+                        <p class="wind" style="margin: 0; font-size: 16px; color: #666;"></p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
